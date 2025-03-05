@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Recruiter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/listpost.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div class="header-nav-left">
+          <button id="button-side-bar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img src="assets/images/logo.jpg" alt="" />
+          <span>G-Recruiter</span>
+        </div>
+        <div class="header-nav-middle">
+          <form action="" class="form-search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search by name of Players or name of Esports..."
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="header-nav-right">
+          <img src="assets/images/avatar.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="container-1-4">
+        <!-- menu left side -->
+        <nav class="container-nav-bar" id="side-bar">
+          <ul class="container-nav-bar-ul">
+            <li>
+              <a href=""></a><i class="fa-solid fa-house"></i><span>Home</span>
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-newspaper"></i
+              ><span>Posts</span>
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-user-group"></i
+              ><span>Player</span>
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-pen-nib"></i
+              ><span>Write</span>
+            </li>
+          </ul>
+          <hr />
+          <ul class="container-nav-bar-ul">
+            <li>
+              <a href=""></a><i class="fa-solid fa-user"></i>
+              <span>Profile</span>
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-pen-to-square"></i
+              ><span>Edit</span>
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-right-from-bracket"></i
+              ><span>Log out</span>
+            </li>
+          </ul>
+        </nav>
+        <!-- main content -->
+        <div class="main-content">
+          <div class="cover-image">
+            <img src="/assets/images/Frame 7.png" width="100%" alt="" />
+            <div class="infor-inner">
+              <div class="infor-basic">
+                <img
+                  src="/assets/images/azir.jpg"
+                  width="100px"
+                  height="100px"
+                  alt=""
+                />
+                <div class="infor-name">
+                  <h2>Nguyen Ngoc Dung</h2>
+                  <p class="nick-name">
+                    FAKER -
+                    <span
+                      >N.N.D havent join anyteam...
+                      <a href=""><strong>INVITE HIM</strong></a></span
+                    >
+                  </p>
+                </div>
+                <p class="type-user">Pro Player</p>
+                <a href="" class="link-highlight"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.2em"
+                    height="1.2em"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <path
+                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                      />
+                      <path
+                        fill="currentColor"
+                        d="M4 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm4.625 5.63a1.235 1.235 0 0 1 1.715-.992c.504.216 1.568.702 2.916 1.48a28 28 0 0 1 2.74 1.786a1.234 1.234 0 0 1 0 1.98a28 28 0 0 1-2.74 1.784a28 28 0 0 1-2.916 1.482a1.234 1.234 0 0 1-1.715-.992a29 29 0 0 1-.176-3.264c0-1.551.112-2.719.176-3.264"
+                      />
+                    </g>
+                  </svg>
+                  Highlight Video</a
+                >
+              </div>
+              <div class="infor-follow">
+                <a href="" class="follow-action"
+                  >Follow <strong>Nguyen Ngoc Dung</strong></a
+                >
+                <button><strong>4</strong> followers</button>
+                <button><strong>4</strong> followings</button>
+                <button><strong>4</strong> posts</button>
+              </div>
+            </div>
+          </div>
+          <div class="heading-all-tab">
+            <button id="btn-tab-info-1" class="heading-all-tab-button active">
+              Personal</button
+            ><button id="btn-tab-info-2" class="heading-all-tab-button">
+              Nguyen Ngoc Dung's team
+            </button>
+          </div>
+          <div class="container" id="tab-info-1">
+            <div class="main-info">
+              <div class="main-info-part">
+                <h3>Personal Information</h3>
+                <table>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM12 12.116l8-5.231L19.692 6L12 11L4.308 6L4 6.885z"
+                        />
+                      </svg>
+                    </td>
+                    <td>fasdads@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+                        />
+                      </svg>
+                    </td>
+                    <td>Xom 1 Quynh Chau Nghe An</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"
+                        />
+                      </svg>
+                    </td>
+                    <td>046.333.4***</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 256 256"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M152 140a36 36 0 1 1-36-36a36 36 0 0 1 36 36m64-100v176a16 16 0 0 1-16 16H56a16 16 0 0 1-16-16V40a16 16 0 0 1 16-16h144a16 16 0 0 1 16 16m-24 32a8 8 0 0 0-8-8h-32a8 8 0 0 0 0 16h12.69l-18 18A52.08 52.08 0 1 0 158 109.35l18-18V104a8 8 0 0 0 16 0Z"
+                        />
+                      </svg>
+                    </td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <g fill="none">
+                          <path
+                            d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
+                          />
+                          <path
+                            fill="currentColor"
+                            d="M12.6 2.2a1 1 0 0 0-1.2 0a8 8 0 0 0-1.147 1.073C9.73 3.862 9 4.855 9 6a3 3 0 0 0 3 3H6a3 3 0 0 0-3 3v2c0 1.236 1.411 1.942 2.4 1.2l.667-.5a1 1 0 0 1 1.2 0l.266.2a3 3 0 0 0 3.6 0l.267-.2a1 1 0 0 1 1.2 0l.267.2a3 3 0 0 0 3.6 0l.266-.2a1 1 0 0 1 1.2 0l.667.5c.989.742 2.4.036 2.4-1.2v-2a3 3 0 0 0-3-3h-6a3 3 0 0 0 3-3c0-1.145-.73-2.138-1.253-2.727c-.346-.39-.73-.76-1.147-1.073M4 17.415V20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2.585a1.48 1.48 0 0 1-1.4-.215l-.667-.5a1 1 0 0 0-1.2 0l-.266.2a3 3 0 0 1-3.6 0l-.267-.2a1 1 0 0 0-1.2 0l-.267.2a3 3 0 0 1-3.6 0l-.266-.2a1 1 0 0 0-1.2 0l-.667.5a1.48 1.48 0 0 1-1.4.215"
+                          />
+                        </g>
+                      </svg>
+                    </td>
+                    <td>18/01/2002</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="main-info-part">
+                <h3>Professional</h3>
+                <table>
+                  <tr>
+                    <td><strong>Esport</strong></td>
+                    <td>
+                      <img
+                        src="/assets/images/logo.jpg"
+                        height="20px"
+                        width="20px"
+                        alt=""
+                      />
+                      Lien Minh Huyen Thoai
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Rank</strong></td>
+                    <td>
+                      <img
+                        src="/assets/images/logo.jpg"
+                        height="20px"
+                        width="20px"
+                        alt=""
+                      />
+                      Chanllenger - 500points
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Position:</strong></td>
+                    <td>
+                      <img
+                        src="/assets/images/logo.jpg"
+                        height="20px"
+                        width="20px"
+                        alt=""
+                      />
+                      ADC
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="main-info-part">
+                <h3>Time lines</h3>
+                <table>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M18.483 16.767A8.5 8.5 0 0 1 8.118 7.081a1 1 0 0 1-.113.097c-.28.213-.63.292-1.33.45l-.635.144c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.052 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="m9.153 5.408l-.328.588c-.36.646-.54.969-.82 1.182q.06-.045.113-.097a8.5 8.5 0 0 0 10.366 9.686l-.02-.19c-.071-.743-.107-1.115 0-1.46c.107-.344.345-.623.822-1.18l.434-.507c1.677-1.96 2.515-2.941 2.222-3.882c-.292-.941-1.522-1.22-3.982-1.776l-.636-.144c-.699-.158-1.049-.237-1.33-.45c-.28-.213-.46-.536-.82-1.182l-.327-.588C13.58 3.136 12.947 2 12 2s-1.58 1.136-2.847 3.408"
+                          opacity="0.5"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      Uu diem mot cho moi thu kekeke noi chubng rat la oke
+                      kekekekeke
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M18.483 16.767A8.5 8.5 0 0 1 8.118 7.081a1 1 0 0 1-.113.097c-.28.213-.63.292-1.33.45l-.635.144c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.052 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="m9.153 5.408l-.328.588c-.36.646-.54.969-.82 1.182q.06-.045.113-.097a8.5 8.5 0 0 0 10.366 9.686l-.02-.19c-.071-.743-.107-1.115 0-1.46c.107-.344.345-.623.822-1.18l.434-.507c1.677-1.96 2.515-2.941 2.222-3.882c-.292-.941-1.522-1.22-3.982-1.776l-.636-.144c-.699-.158-1.049-.237-1.33-.45c-.28-.213-.46-.536-.82-1.182l-.327-.588C13.58 3.136 12.947 2 12 2s-1.58 1.136-2.847 3.408"
+                          opacity="0.5"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      Uu diem mot cho moi thu kekeke noi chubng rat la oke
+                      kekekekeke
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        {...$$props}
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M18.483 16.767A8.5 8.5 0 0 1 8.118 7.081a1 1 0 0 1-.113.097c-.28.213-.63.292-1.33.45l-.635.144c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.052 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="m9.153 5.408l-.328.588c-.36.646-.54.969-.82 1.182q.06-.045.113-.097a8.5 8.5 0 0 0 10.366 9.686l-.02-.19c-.071-.743-.107-1.115 0-1.46c.107-.344.345-.623.822-1.18l.434-.507c1.677-1.96 2.515-2.941 2.222-3.882c-.292-.941-1.522-1.22-3.982-1.776l-.636-.144c-.699-.158-1.049-.237-1.33-.45c-.28-.213-.46-.536-.82-1.182l-.327-.588C13.58 3.136 12.947 2 12 2s-1.58 1.136-2.847 3.408"
+                          opacity="0.5"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      Uu diem mot cho moi thu kekeke noi chubng rat la oke
+                      kekekekeke
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="main-text">
+              <div class="main-text-part">
+                <h2>Bio</h2>
+                <div class="main-text-part-bio">
+                  <h3>Instagram Bio Quotes</h3>
+                  <ol>
+                    <li>
+                      &ldquo;To anyone that ever told you you&rsquo;re no
+                      good&hellip; they&rsquo;re no better.&rdquo; &mdash;
+                      Hayley Williams
+                    </li>
+                    <li>
+                      &ldquo;This above all: to thine own self be true.&rdquo;
+                      &mdash; William Shakespeare
+                    </li>
+                    <li>
+                      &ldquo;No one can make you feel inferior without your
+                      consent.&rdquo; &mdash; Eleanor Roosevelt
+                    </li>
+                    <li>
+                      &ldquo;Whether you think you can, or you think you
+                      can&rsquo;t &ndash; you&rsquo;re right.&rdquo; &mdash;
+                      Henry Ford
+                    </li>
+                    <li>
+                      &ldquo;Your time is limited, so don&rsquo;t waste it
+                      living someone else&rsquo;s life.&rdquo; &mdash; Steve
+                      Jobs
+                    </li>
+                    <li>
+                      &ldquo;Strive not to be a success, but rather to be of
+                      value.&rdquo; &mdash; Albert Einstein
+                    </li>
+                    <li>
+                      &ldquo;Wanting to be someone else is a waste of who you
+                      are.&rdquo; &mdash; Kurt Cobain
+                    </li>
+                    <li>
+                      &ldquo;I would rather die of passion than of
+                      boredom.&rdquo; &mdash; Vincent van Gogh
+                    </li>
+                    <li>
+                      &ldquo;To love oneself is the beginning of a lifelong
+                      romance.&rdquo; &mdash; Oscar Wilde
+                    </li>
+                    <li>
+                      &ldquo;Where&rsquo;s your will to be weird&hellip;&rdquo;
+                      &mdash; Jim Morrison
+                    </li>
+                  </ol>
+                  <h3>Aesthetic Instagram Bio Ideas</h3>
+                  <ol>
+                    <li>
+                      🏄&zwj;♂️ Life is a beautiful journey, join me as I travel
+                      through it.
+                    </li>
+                    <li>Capturing beautiful moments one photo at a time.</li>
+                    <li>
+                      Exploring the world and finding beauty in the little
+                      things.
+                    </li>
+                    <li>Living, laughing, and loving life.</li>
+                    <li>Sharing my love of life through photos.</li>
+                    <li>
+                      Let&rsquo;s take the time to appreciate the beauty around
+                      us.
+                    </li>
+                    <li>Find the beauty in everything.</li>
+                    <li>Enjoying the simple things in life. 🌍</li>
+                    <li>Life is a canvas, come explore it with me.</li>
+                    <li>Let&rsquo;s create something beautiful together. 🔥</li>
+                  </ol>
+                  <h3>Instagram Bio Ideas for Girls</h3>
+                  <ol>
+                    <li>Without me it would be just &ldquo;aweso&rdquo;.</li>
+                    <li>Stressed, blessed, and coffee obsessed.</li>
+                    <li>
+                      It wasn&rsquo;t always easy but it&rsquo;s worth it.
+                    </li>
+                    <li>Be yourself; everyone else is already taken.</li>
+                    <li>Kiss and make up.</li>
+                    <li>By grace through faith &ndash; Beautiful</li>
+                    <li>VIP Queen👑</li>
+                    <li>𝓛𝓲𝓽𝓽𝓵𝓮 Unicorn🦄</li>
+                    <li>I&rsquo;m impressing myself.</li>
+                    <li>Let them say it and be busy slaying it. 💫</li>
+                  </ol>
+                  <!-- Comments are visible in the HTML source only -->
+                </div>
+              </div>
+              <div class="main-text-part">
+                <h2>Dung's Posts</h2>
+                <div class="poster-item bg-gray-50">
+                  <div class="p-2">
+                    <header class="poster-item-header pb-1">
+                      <img
+                        src="/assets/images/splyce-esports-team-logo.png"
+                        class="poster-item-header-img"
+                      />
+                      <div class="poster-name">
+                        <p class="hover:underline font-bold text-rose-600">
+                          Splycec Esport Team
+                        </p>
+                        <span>Find Player For Team</span>
+                        <span class="esport-in-post"> - Legue of Legend</span>
+                        <span class="text-gray-400"> - 5m ago</span>
+                      </div>
+                    </header>
+                    <hr />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim.
+                    </p>
+                  </div>
+
+                  <img
+                    src="/assets/images/Virtus-Pro-.jpg"
+                    alt=""
+                    srcset=""
+                    width="100%"
+                  />
+                  <p class="count-comment">53 comments</p>
+                </div>
+                <div class="poster-item bg-gray-50">
+                  <div class="p-2">
+                    <header class="poster-item-header pb-1">
+                      <img
+                        src="/assets/images/splyce-esports-team-logo.png"
+                        class="poster-item-header-img"
+                      />
+                      <div class="poster-name">
+                        <p class="hover:underline font-bold text-rose-600">
+                          Splycec Esport Team
+                        </p>
+                        <span>Find Player For Team</span>
+                        <span class="esport-in-post"> - Legue of Legend</span>
+                        <span class="text-gray-400"> - 5m ago</span>
+                      </div>
+                    </header>
+                    <hr />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim.
+                    </p>
+                  </div>
+
+                  <img
+                    src="/assets/images/Virtus-Pro-.jpg"
+                    alt=""
+                    srcset=""
+                    width="100%"
+                  />
+                  <p class="count-comment">53 comments</p>
+                </div>
+                <div class="poster-item bg-gray-50">
+                  <div class="p-2">
+                    <header class="poster-item-header pb-1">
+                      <img
+                        src="/assets/images/splyce-esports-team-logo.png"
+                        class="poster-item-header-img"
+                      />
+                      <div class="poster-name">
+                        <p class="hover:underline font-bold text-rose-600">
+                          Splycec Esport Team
+                        </p>
+                        <span>Find Player For Team</span>
+                        <span class="esport-in-post"> - Legue of Legend</span>
+                        <span class="text-gray-400"> - 5m ago</span>
+                      </div>
+                    </header>
+                    <hr />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim. Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam qui unde, nisi nulla facere sint reprehenderit
+                      itaque repellendus. Temporibus repellat libero adipisci
+                      modi optio? Quia dolorum maxime eligendi dicta enim.
+                    </p>
+                  </div>
+
+                  <img
+                    src="/assets/images/Virtus-Pro-.jpg"
+                    alt=""
+                    srcset=""
+                    width="100%"
+                  />
+                  <p class="count-comment">53 comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="tab-info-2" style="display: none">
+            <div class="team-info">
+              <div class="team-info-side side-1">
+                <img
+                  class="side-1-avatar"
+                  src="/assets/images/background2.jpg"
+                  alt=""
+                />
+                <h2>
+                  Splier Esport Team
+                  <a href="" class="edit-btn">Sửa thông tin</a>
+                </h2>
+                <hr />
+                <div class="side-1-esport">
+                  <img
+                    src="/assets/images/logo.jpg"
+                    height="30px"
+                    width="30px"
+                    alt=""
+                  />
+                  <h3><i>Lien Minh Huyen Thoai</i></h3>
+                </div>
+                <p class="founder"><strong>Thanh lap:</strong> Duc Dat Pro</p>
+                <i class="created_at"> Thanh lap: 20-02-2002 </i>
+                <table class="esport-team-member">
+                  <tr>
+                    <td class="position">TOP:</td>
+                    <td><a href="">Nguyen Ngoc Dung (NMoway)</a></td>
+                  </tr>
+                  <tr>
+                    <td class="position">ADC:</td>
+                    <td><a href="">Nguyen Ngoc Dung (NMoway)</a></td>
+                  </tr>
+                  <tr>
+                    <td class="position">JUNGLE:</td>
+                    <td><a href="">Nguyen Ngoc Dung (NMoway)</a></td>
+                  </tr>
+                  <tr>
+                    <td class="position">SUPPORT:</td>
+                    <td><a href="">Nguyen Ngoc Dung (NMoway)</a></td>
+                  </tr>
+                </table>
+
+                <details class="team-info-down">
+                  <summary>
+                    <h2 class="team-introduce-heading">
+                      Team Introduce... Click to read more
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 48 48"
+                      >
+                        <defs>
+                          <mask id="ipSDownC0">
+                            <g
+                              fill="none"
+                              stroke-linejoin="round"
+                              stroke-width="4"
+                            >
+                              <path
+                                fill="#fff"
+                                stroke="#fff"
+                                d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+                              />
+                              <path
+                                stroke="#000"
+                                stroke-linecap="round"
+                                d="m33 21l-9 9l-9-9"
+                              />
+                            </g>
+                          </mask>
+                        </defs>
+                        <path
+                          fill="currentColor"
+                          d="M0 0h48v48H0z"
+                          mask="url(#ipSDownC0)"
+                        />
+                      </svg>
+                    </h2>
+                  </summary>
+
+                  <div class="team-introduce-content">
+                    <ul class="news-list news-team-list hoverable-rows">
+                      <li>
+                        January 2,&nbsp;<span class="rosterchange-join"
+                          ><span
+                            class="sub sprite role-sprite"
+                            title="Mid Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/Emo"
+                            data-to-id="Emo"
+                            data-to-titles="Emo||Tooltip:Emo"
+                            data-to-flags="fiem"
+                            >Emo</a
+                          >&nbsp;is added to the GCD as substitute.</span
+                        ><sup
+                          id="cite_ref-VN_GCD_2024-01-02_141-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-VN_GCD_2024-01-02-141"
+                            >[141]</a
+                          ></sup
+                        >&nbsp;<span class="sprite role-sprite" title="Jungler"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Levi"
+                          data-to-id="Levi"
+                          data-to-titles="Levi||Tooltip:Levi"
+                          data-to-flags="fiem"
+                          >Levi</a
+                        >,&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Mid Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Blazes"
+                          data-to-id="Blazes"
+                          data-to-titles="Blazes||Tooltip:Blazes"
+                          data-to-flags="fiem"
+                          >Blazes</a
+                        >,&nbsp;<a
+                          class="catlink-players pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Archie_(Tr%E1%BA%A7n_Minh_Nh%E1%BB%B1t)"
+                          data-to-id="Archie__28-Tr_e1-_ba-_a7-n_Minh_Nh_e1-_bb-_b1-t_29-"
+                          data-to-titles="Archie (Trần Minh Nhựt)||Tooltip:Archie (Trần Minh Nhựt)"
+                          data-to-flags="fiem"
+                          >Archie</a
+                        >&nbsp;(Head Coach),&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Hype_(Tr%E1%BA%A7n_H%E1%BB%AFu_To%C3%A0n)"
+                          data-to-id="Hype__28-Tr_e1-_ba-_a7-n_H_e1-_bb-_af-u_To_c3-_a0-n_29-"
+                          data-to-titles="Hype (Trần Hữu To&agrave;n)||Tooltip:Hype (Trần Hữu To&agrave;n)"
+                          data-to-flags="fiem"
+                          >Hype</a
+                        >&nbsp;(Analyst), and&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/BigKoro"
+                          data-to-id="Bigkoro"
+                          data-to-titles="Bigkoro|BigKoro|Tooltip:Bigkoro"
+                          data-to-flags="fiem"
+                          >BigKoro</a
+                        >&nbsp;(Positional Coach)'s contracts are updated in
+                        the&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          title="Global Contract Database"
+                          href="https://lol.fandom.com/wiki/Global_Contract_Database"
+                          data-to-id="Archive_3a-Global_Contract_Database"
+                          data-to-titles="Archive:Global Contract Database|Global Contract Database|Tooltip:Archive:Global Contract Database"
+                          data-to-flags="fieM"
+                          >GCD</a
+                        >, expiring on 18 November 2024.&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Pyshiro"
+                          data-to-id="Pyshiro"
+                          data-to-titles="Pyshiro||Tooltip:Pyshiro"
+                          data-to-flags="fiem"
+                          >Pyshiro</a
+                        >,&nbsp;<span class="sprite role-sprite" title="Support"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Elio"
+                          data-to-id="Elio"
+                          data-to-titles="Elio||Tooltip:Elio"
+                          data-to-flags="fiem"
+                          >Elio</a
+                        >, and&nbsp;<span
+                          class="sub sprite role-sprite"
+                          title="Mid Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Emo"
+                          data-to-id="Emo"
+                          data-to-titles="Emo||Tooltip:Emo"
+                          data-to-flags="fiem"
+                          >Emo</a
+                        >'s contracts are updated in the&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          title="Global Contract Database"
+                          href="https://lol.fandom.com/wiki/Global_Contract_Database"
+                          data-to-id="Archive_3a-Global_Contract_Database"
+                          data-to-titles="Archive:Global Contract Database|Global Contract Database|Tooltip:Archive:Global Contract Database"
+                          data-to-flags="fieM"
+                          >GCD</a
+                        >, expiring on 17 November 2025.<sup
+                          id="cite_ref-VN_GCD_2024-01-02_141-1"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-VN_GCD_2024-01-02-141"
+                            >[141]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        March 27,&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Mid Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Blazes"
+                          data-to-id="Blazes"
+                          data-to-titles="Blazes||Tooltip:Blazes"
+                          data-to-flags="fiem"
+                          >Blazes</a
+                        >&nbsp;and&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Pyshiro"
+                          data-to-id="Pyshiro"
+                          data-to-titles="Pyshiro||Tooltip:Pyshiro"
+                          data-to-flags="fiem"
+                          >Pyshiro</a
+                        >&nbsp;receive a&nbsp;<a
+                          class="to_hasTooltip"
+                          title="List of Competitive Rulings"
+                          href="https://lol.fandom.com/wiki/List_of_Competitive_Rulings"
+                          data-to-id="List_of_Competitive_Rulings"
+                          data-to-titles="List of Competitive Rulings||Tooltip:List of Competitive Rulings"
+                          data-to-flags="fieM"
+                          >indefinite suspension</a
+                        >&nbsp;from all Riot-affiliated tournaments following
+                        the&nbsp;<a
+                          class="to_hasTooltip"
+                          title="2024 VCS match-fixing investigations"
+                          href="https://lol.fandom.com/wiki/2024_VCS_match-fixing_investigations"
+                          data-to-id="2024_VCS_match_2d-fixing_investigations"
+                          data-to-titles="2024 VCS match-fixing investigations||Tooltip:2024 VCS match-fixing investigations"
+                          data-to-flags="fieM"
+                          >2024 VCS match-fixing investigations</a
+                        >.<sup
+                          id="cite_ref-News/2024-03-27_ref_27_142-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-03-27_ref_27-142"
+                            >[142]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        March 29,&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/BigKoro"
+                          data-to-id="Bigkoro"
+                          data-to-titles="Bigkoro|BigKoro|Tooltip:Bigkoro"
+                          data-to-flags="fiem"
+                          >BigKoro</a
+                        >&nbsp;(Positional Coach to Bot) changes position.<sup
+                          id="cite_ref-News/2024-03-29_ref_12_143-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-03-29_ref_12-143"
+                            >[143]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        March 31,&nbsp;<span class="rosterchange-join"
+                          ><span class="sprite role-sprite" title="Bot Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/EasyLove"
+                            data-to-id="EasyLove"
+                            data-to-titles="EasyLove||Tooltip:EasyLove"
+                            data-to-flags="fiem"
+                            >EasyLove</a
+                          >&nbsp;rejoins.</span
+                        ><sup id="cite_ref-GAM_EasyLove_144-0" class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-GAM_EasyLove-144"
+                            >[144]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        April 1,&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Mid Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Emo"
+                          data-to-id="Emo"
+                          data-to-titles="Emo||Tooltip:Emo"
+                          data-to-flags="fiem"
+                          >Emo</a
+                        >&nbsp;moves to starting roster.<sup
+                          id="cite_ref-News/2024-04-01_ref_12_145-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-04-01_ref_12-145"
+                            >[145]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        June 3,&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Pyshiro"
+                          data-to-id="Pyshiro"
+                          data-to-titles="Pyshiro||Tooltip:Pyshiro"
+                          data-to-flags="fiem"
+                          >Pyshiro</a
+                        >&nbsp;receives a 18 month&nbsp;<a
+                          class="to_hasTooltip"
+                          title="List of Competitive Rulings"
+                          href="https://lol.fandom.com/wiki/List_of_Competitive_Rulings"
+                          data-to-id="List_of_Competitive_Rulings"
+                          data-to-titles="List of Competitive Rulings||Tooltip:List of Competitive Rulings"
+                          data-to-flags="fieM"
+                          >suspension</a
+                        >&nbsp;from all Riot-affiliated tournaments following
+                        the&nbsp;<a
+                          class="to_hasTooltip"
+                          title="2024 VCS match-fixing investigations"
+                          href="https://lol.fandom.com/wiki/2024_VCS_match-fixing_investigations"
+                          data-to-id="2024_VCS_match_2d-fixing_investigations"
+                          data-to-titles="2024 VCS match-fixing investigations||Tooltip:2024 VCS match-fixing investigations"
+                          data-to-flags="fieM"
+                          >2024 VCS match-fixing investigations</a
+                        >.<sup
+                          id="cite_ref-News/2024-06-03_ref_15_146-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-06-03_ref_15-146"
+                            >[146]</a
+                          ></sup
+                        >&nbsp;<span class="rosterchange-join"
+                          ><span class="sprite role-sprite" title="Mid Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/Blazes"
+                            data-to-id="Blazes"
+                            data-to-titles="Blazes||Tooltip:Blazes"
+                            data-to-flags="fiem"
+                            >Blazes</a
+                          >' temporary&nbsp;<a
+                            class="to_hasTooltip"
+                            title="List of Competitive Rulings"
+                            href="https://lol.fandom.com/wiki/List_of_Competitive_Rulings"
+                            data-to-id="List_of_Competitive_Rulings"
+                            data-to-titles="List of Competitive Rulings||Tooltip:List of Competitive Rulings"
+                            data-to-flags="fieM"
+                            >suspension</a
+                          >&nbsp;has been lifted and will be allowed to continue
+                          participating in all Riot-affiliated
+                          tournaments.</span
+                        ><sup
+                          id="cite_ref-News/2024-06-03_ref_16_147-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-06-03_ref_16-147"
+                            >[147]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        June 11,&nbsp;<span class="rosterchange-join"
+                          ><span
+                            class="sub sprite role-sprite"
+                            title="Bot Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/Neo_(To%C3%A0n_Tr%E1%BA%A7n)"
+                            data-to-id="Neo__28-To_c3-_a0-n_Tr_e1-_ba-_a7-n_29-"
+                            data-to-titles="Neo (To&agrave;n Trần)||Tooltip:Neo (To&agrave;n Trần)"
+                            data-to-flags="fiem"
+                            >Neo</a
+                          >&nbsp;and&nbsp;<span
+                            class="sub sprite role-sprite"
+                            title="Bot Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="mw-redirect to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/Sky_(Nguy%E1%BB%85n_Th%C3%A1i_Ki%E1%BB%87t)"
+                            data-to-id="SkyK"
+                            data-to-titles="SkyK|Sky (Nguyễn Th&aacute;i Kiệt)|Tooltip:SkyK"
+                            data-to-flags="fiem"
+                            >Sky</a
+                          >&nbsp;are added to the GCD as substitutes.</span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Bigkoro"
+                          data-to-id="Bigkoro"
+                          data-to-titles="Bigkoro||Tooltip:Bigkoro"
+                          data-to-flags="fiem"
+                          >Bigkoro</a
+                        >&nbsp;(Bot to Assistant Coach)'s position is changed in
+                        the GCD.&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Mid Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Blazes"
+                          data-to-id="Blazes"
+                          data-to-titles="Blazes||Tooltip:Blazes"
+                          data-to-flags="fiem"
+                          >Blazes</a
+                        >&nbsp;is removed from the GCD.<sup
+                          id="cite_ref-VN_GCD_2024-06-11_148-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-VN_GCD_2024-06-11-148"
+                            >[148]</a
+                          ></sup
+                        >&nbsp;<span
+                          class="sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/EasyLove"
+                          data-to-id="EasyLove"
+                          data-to-titles="EasyLove||Tooltip:EasyLove"
+                          data-to-flags="fiem"
+                          >EasyLove</a
+                        >&nbsp;and&nbsp;<span
+                          class="sub sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Neo_(To%C3%A0n_Tr%E1%BA%A7n)"
+                          data-to-id="Neo__28-To_c3-_a0-n_Tr_e1-_ba-_a7-n_29-"
+                          data-to-titles="Neo (To&agrave;n Trần)||Tooltip:Neo (To&agrave;n Trần)"
+                          data-to-flags="fiem"
+                          >Neo</a
+                        >'s contracts are updated in the&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          title="Global Contract Database"
+                          href="https://lol.fandom.com/wiki/Global_Contract_Database"
+                          data-to-id="Archive_3a-Global_Contract_Database"
+                          data-to-titles="Archive:Global Contract Database|Global Contract Database|Tooltip:Archive:Global Contract Database"
+                          data-to-flags="fieM"
+                          >GCD</a
+                        >, expiring on 18 November 2024.&nbsp;<span
+                          class="sub sprite role-sprite"
+                          title="Bot Laner"
+                          ><br /></span
+                        >&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Sky_(Nguy%E1%BB%85n_Th%C3%A1i_Ki%E1%BB%87t)"
+                          data-to-id="SkyK"
+                          data-to-titles="SkyK|Sky (Nguyễn Th&aacute;i Kiệt)|Tooltip:SkyK"
+                          data-to-flags="fiem"
+                          >Sky</a
+                        >'s contract is updated in the&nbsp;<a
+                          class="mw-redirect to_hasTooltip"
+                          title="Global Contract Database"
+                          href="https://lol.fandom.com/wiki/Global_Contract_Database"
+                          data-to-id="Archive_3a-Global_Contract_Database"
+                          data-to-titles="Archive:Global Contract Database|Global Contract Database|Tooltip:Archive:Global Contract Database"
+                          data-to-flags="fieM"
+                          >GCD</a
+                        >, expiring on 17 November 2025.<sup
+                          id="cite_ref-VN_GCD_2024-06-11_148-1"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-VN_GCD_2024-06-11-148"
+                            >[148]</a
+                          ></sup
+                        >&nbsp;<a
+                          class="catlink-players pWAG pWAN to_hasTooltip"
+                          href="https://lol.fandom.com/wiki/Neo_(To%C3%A0n_Tr%E1%BA%A7n)"
+                          data-to-id="Neo__28-To_c3-_a0-n_Tr_e1-_ba-_a7-n_29-"
+                          data-to-titles="Neo (To&agrave;n Trần)||Tooltip:Neo (To&agrave;n Trần)"
+                          data-to-flags="fiem"
+                          >Neo</a
+                        >&nbsp;changes residency from&nbsp;
+                        <div class="region-icon">NA</div>
+                        <span class="markup-object region-object"
+                          ><span class="markup-object-name"
+                            >North America</span
+                          ></span
+                        >&nbsp;to&nbsp;
+                        <div class="region-icon">VN</div>
+                        <span class="markup-object region-object"
+                          ><span class="markup-object-name">Vietnam</span></span
+                        >.<sup
+                          id="cite_ref-VN_GCD_2024-06-11_148-2"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-VN_GCD_2024-06-11-148"
+                            >[148]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        June 13,&nbsp;<span class="rosterchange-join"
+                          ><span
+                            class="sub sprite role-sprite"
+                            title="Bot Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/Neo_(To%C3%A0n_Tr%E1%BA%A7n)"
+                            data-to-id="Neo__28-To_c3-_a0-n_Tr_e1-_ba-_a7-n_29-"
+                            data-to-titles="Neo (To&agrave;n Trần)||Tooltip:Neo (To&agrave;n Trần)"
+                            data-to-flags="fiem"
+                            >Neo</a
+                          >'s joining as substitute is confirmed.</span
+                        ><sup
+                          id="cite_ref-News/2024-06-13_ref_11_149-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-06-13_ref_11-149"
+                            >[149]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        June 14,&nbsp;<span class="rosterchange-join"
+                          ><span
+                            class="sub sprite role-sprite"
+                            title="Bot Laner"
+                            ><br /></span
+                          >&nbsp;<a
+                            class="catlink-players pWAG pWAN to_hasTooltip"
+                            href="https://lol.fandom.com/wiki/SkyK"
+                            data-to-id="SkyK"
+                            data-to-titles="SkyK||Tooltip:SkyK"
+                            data-to-flags="fiem"
+                            >SkyK</a
+                          >'s joining as substitute is confirmed.</span
+                        ><sup
+                          id="cite_ref-News/2024-06-14_ref_15_150-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-06-14_ref_15-150"
+                            >[150]</a
+                          ></sup
+                        >
+                      </li>
+                      <li>
+                        November 2, Team is selected as a partner team for
+                        the&nbsp;<a
+                          class="to_hasTooltip"
+                          title="League of Legends Championship Pacific"
+                          href="https://lol.fandom.com/wiki/League_of_Legends_Championship_Pacific"
+                          data-to-id="League_of_Legends_Championship_Pacific"
+                          data-to-titles="League of Legends Championship Pacific||Tooltip:League of Legends Championship Pacific"
+                          data-to-flags="fieM"
+                          >LCP</a
+                        >&nbsp;2025 season.<sup
+                          id="cite_ref-News/2024-11-02_ref_6_151-0"
+                          class="reference"
+                          ><a
+                            href="https://lol.fandom.com/wiki/GAM_Esports#cite_note-News/2024-11-02_ref_6-151"
+                            >[151]</a
+                          ></sup
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+              <div class="team-info-side">
+                <div class="team-info-side-tab">
+                  <button id="introduce-tab-button" class="active">
+                    Introduce & Posts
+                  </button>
+                  <a href="">Approving</a>
+                </div>
+                <div class="" id="introduce-tab">
+                  <div class="main-text-part">
+                    <h2>Dung's Posts</h2>
+                    <div class="poster-item bg-gray-50">
+                      <div class="p-2">
+                        <header class="poster-item-header pb-1">
+                          <img
+                            src="/assets/images/splyce-esports-team-logo.png"
+                            class="poster-item-header-img"
+                          />
+                          <div class="poster-name">
+                            <p class="hover:underline font-bold text-rose-600">
+                              Splycec Esport Team
+                            </p>
+                            <span>Find Player For Team</span>
+                            <span class="esport-in-post">
+                              - Legue of Legend</span
+                            >
+                            <span class="text-gray-400"> - 5m ago</span>
+                          </div>
+                        </header>
+                        <hr />
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quibusdam qui unde, nisi nulla facere sint
+                          reprehenderit itaque repellendus. Temporibus repellat
+                          libero adipisci modi optio? Quia dolorum maxime
+                          eligendi dicta enim. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Quibusdam qui unde, nisi
+                          nulla facere sint reprehenderit itaque repellendus.
+                          Temporibus repellat libero adipisci modi optio? Quia
+                          dolorum maxime eligendi dicta enim. Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quibusdam qui
+                          unde, nisi nulla facere sint reprehenderit itaque
+                          repellendus. Temporibus repellat libero adipisci modi
+                          optio? Quia dolorum maxime eligendi dicta enim.
+                        </p>
+                      </div>
+
+                      <img
+                        src="/assets/images/Virtus-Pro-.jpg"
+                        alt=""
+                        srcset=""
+                        width="100%"
+                      />
+                      <p class="count-comment">53 comments</p>
+                    </div>
+                    <div class="poster-item bg-gray-50">
+                      <div class="p-2">
+                        <header class="poster-item-header pb-1">
+                          <img
+                            src="/assets/images/splyce-esports-team-logo.png"
+                            class="poster-item-header-img"
+                          />
+                          <div class="poster-name">
+                            <p class="hover:underline font-bold text-rose-600">
+                              Splycec Esport Team
+                            </p>
+                            <span>Find Player For Team</span>
+                            <span class="esport-in-post">
+                              - Legue of Legend</span
+                            >
+                            <span class="text-gray-400"> - 5m ago</span>
+                          </div>
+                        </header>
+                        <hr />
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quibusdam qui unde, nisi nulla facere sint
+                          reprehenderit itaque repellendus. Temporibus repellat
+                          libero adipisci modi optio? Quia dolorum maxime
+                          eligendi dicta enim. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Quibusdam qui unde, nisi
+                          nulla facere sint reprehenderit itaque repellendus.
+                          Temporibus repellat libero adipisci modi optio? Quia
+                          dolorum maxime eligendi dicta enim. Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quibusdam qui
+                          unde, nisi nulla facere sint reprehenderit itaque
+                          repellendus. Temporibus repellat libero adipisci modi
+                          optio? Quia dolorum maxime eligendi dicta enim.
+                        </p>
+                      </div>
+
+                      <img
+                        src="/assets/images/Virtus-Pro-.jpg"
+                        alt=""
+                        srcset=""
+                        width="100%"
+                      />
+                      <p class="count-comment">53 comments</p>
+                    </div>
+                    <div class="poster-item bg-gray-50">
+                      <div class="p-2">
+                        <header class="poster-item-header pb-1">
+                          <img
+                            src="/assets/images/splyce-esports-team-logo.png"
+                            class="poster-item-header-img"
+                          />
+                          <div class="poster-name">
+                            <p class="hover:underline font-bold text-rose-600">
+                              Splycec Esport Team
+                            </p>
+                            <span>Find Player For Team</span>
+                            <span class="esport-in-post">
+                              - Legue of Legend</span
+                            >
+                            <span class="text-gray-400"> - 5m ago</span>
+                          </div>
+                        </header>
+                        <hr />
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quibusdam qui unde, nisi nulla facere sint
+                          reprehenderit itaque repellendus. Temporibus repellat
+                          libero adipisci modi optio? Quia dolorum maxime
+                          eligendi dicta enim. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Quibusdam qui unde, nisi
+                          nulla facere sint reprehenderit itaque repellendus.
+                          Temporibus repellat libero adipisci modi optio? Quia
+                          dolorum maxime eligendi dicta enim. Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Quibusdam qui
+                          unde, nisi nulla facere sint reprehenderit itaque
+                          repellendus. Temporibus repellat libero adipisci modi
+                          optio? Quia dolorum maxime eligendi dicta enim.
+                        </p>
+                      </div>
+
+                      <img
+                        src="/assets/images/Virtus-Pro-.jpg"
+                        alt=""
+                        srcset=""
+                        width="100%"
+                      />
+                      <p class="count-comment">53 comments</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="approve-tab"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <footer>
+      <div class="footer-container">
+        <div class="icon-social-list">
+          <div class="circle-shape">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="circle-shape">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="circle-shape">
+            <i class="fa-brands fa-discord"></i>
+          </div>
+          <div class="circle-shape">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="circle-shape">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+        <div class="name-social-list">
+          <a href="">Home</a>
+          <a href="">Contact</a>
+          <a href="">About</a>
+          <a href="">News</a>
+          <a href="">About Me</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/side-bar.js"></script>
+
+    <script src="/assets/js/tab-detail-teams.js"></script>
+  </body>
+</html>

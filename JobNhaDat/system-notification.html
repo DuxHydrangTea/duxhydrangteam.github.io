@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/notification.css" />
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/system-notification.css" />
+    <title>System Notification</title>
+  </head>
+  <body class="relative">
+    <div class="modal hidden" id="modal-add-notification">
+      <div class="inner-model flex column">
+        <h3>Thêm: Thông báo hệ thống</h3>
+        <hr />
+        <form action="" class="flex column">
+          <div class="flex relative">
+            <span class="inner-form-title">Thời gian</span>
+            <input
+              type="datetime-local"
+              placeholder="Thời gian"
+              class="flex-1 input-border"
+            />
+          </div>
+          <div class="flex relative">
+            <span class="inner-form-title">Nội dung thông báo</span>
+            <textarea
+              type="datetime-local"
+              placeholder="Nội dung thông báo"
+              rows="8"
+              class="flex-1 input-border"
+            ></textarea>
+          </div>
+          <div class="flex finish-button">
+            <button id="cancel" class="cancel"><span>Huỷ bỏ</span></button>
+            <button id="finish" class="finish hover-darker" type="submit">
+              <span>Hoàn tất</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <header>
+      <nav class="header-bar flex">
+        <a href="#" class="header-bar-bars">
+          <i class="fa-solid fa-bars"></i
+        ></a>
+        <a href="#">
+          <img src="/images/logo.png" alt="" class="img-logo logo-middle"
+        /></a>
+        <div class="header-bar-right flex">
+          <div class="relative">
+            <button
+              class="header-bar-right-notification"
+              id="button-notifications"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <div class="menu-notifications hidden" id="menu-notifications">
+              <ul>
+                <li>
+                  <p>
+                    Thành viên <strong>Tim Nguyễn</strong> vừa đăng ký tài khoản
+                    mới
+                  </p>
+                  <p class="menu-notification-datetime">21-09-2024 10:10:41</p>
+                </li>
+                <li>
+                  <p>
+                    Thành viên <strong>Tim Nguyễn</strong> vừa đăng ký tài khoản
+                    mới
+                  </p>
+                  <p class="menu-notification-datetime">21-09-2024 10:10:41</p>
+                </li>
+                <li>
+                  <p>
+                    Thành viên <strong>Tim Nguyễn</strong> vừa đăng ký tài khoản
+                    mới
+                  </p>
+                  <p class="menu-notification-datetime">21-09-2024 10:10:41</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative">
+            <button class="flex header-bar-right-account" id="button-profile">
+              <span>Tony Nguyen</span>
+              <span
+                ><img
+                  src="/images/avatar.png"
+                  alt=""
+                  class="img-logo circle-avatar"
+              /></span>
+            </button>
+            <div
+              class="menu-notifications menu-profile hidden"
+              id="menu-profile"
+            >
+              <ul>
+                <li><a href="">Thông tin cá nhân</a></li>
+                <li><a href="">Thông báo</a></li>
+                <li><a href="" class="header-bar-logout">Đăng xuất</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="side-bar">
+      <ul class="side-bar-list">
+        <li class="side-bar-item focus" menu-target="home">
+          <a href="/index.html" class="side-bar-item-link flex">
+            <i class="fa-solid fa-house"></i>
+            <span>Trang chủ</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="attribute">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Thuộc tính</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="project">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Dự án</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="BDSnews">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>Tin BDS</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="blog">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-blog"></i>
+            <span>Blog</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="account">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-user"></i>
+            <span>Tài khoản</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="staff">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-users"></i>
+            <span>Nhân viên</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="bank">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Ngân hàng</span>
+          </a>
+        </li>
+        <li class="side-bar-item" menu-target="ads">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-brands fa-goodreads"></i>
+            <span>Quảng cáo</span>
+          </a>
+        </li>
+        '
+        <li class="side-bar-item" menu-target="setting">
+          <a href="" class="side-bar-item-link flex">
+            <i class="fa-solid fa-gear"></i>
+            <span>Cài đặt</span>
+          </a>
+        </li>
+        '
+      </ul>
+      <div class="side-bar-extend">
+        <nav class="menu-extend hidden" target="home">
+          <div class="side-bar-extend-header">
+            <h2>Chính</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li class="menu-extend-active">
+                <a href="/index.html"
+                  ><i class="fa-solid fa-address-card"></i> Thông tin cá nhân</a
+                >
+              </li>
+              <li>
+                <a href="/system-notification.html"
+                  ><i class="fa-solid fa-user"></i> Thông báo hệ thống</a
+                >
+              </li>
+              <li>
+                <a href="/notification.html"
+                  ><i class="fa-solid fa-bell"></i> Thông báo</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-book"></i> Liên hệ với chúng
+                  tôi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Hệ thống</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Nạp tiền</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-user"></i> Thanh toán</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-bell"></i> Tin đăng</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="attribute">
+          <div class="side-bar-extend-header">
+            <h2>Thuộc tính sản phẩm</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Danh mục</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Hướng nhà</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Pháp lý</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tình trạng</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Loại tin đăng</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Nhãn dán</a>
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Địa điểm</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tỉnh/Thành phố</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Quận/Huyện</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Phường/Xã</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Nhập tên đường</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="project">
+          <div class="side-bar-extend-header">
+            <h2>Thuộc tính sản phẩm</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh mục dự án</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Chủ đầu tư</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tiện ích xung
+                  quanh</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Dự án</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="BDSnews">
+          <div class="side-bar-extend-header">
+            <h2>Tin tức</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li class="menu-extend-active">
+                <a href=""><i class="fa-solid fa-address-card"></i> Tất cả</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-user"></i> Tin đã duyệt</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-bell"></i> Tin từ chối duyệt</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-book"></i> Tin hết hạn</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-book"></i> Phản ánh/Báo xấu</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Lấy dữ liệu</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lấy dữ liệu từ nguồn
+                  khác</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Thuộc tính</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Cài đặt</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Gói tin</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="menu-extend hidden" target="blog">
+          <div class="side-bar-extend-header">
+            <h2>Danh mục</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Blog</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Thêm</a>
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Lấy dữ liệu</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lấy dữ liệu từ nguồn
+                  khác</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="menu-extend hidden" target="account">
+          <div class="side-bar-extend-header">
+            <h2>Người dùng</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Tất cả</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tài khoản chưa quản
+                  lý</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tài khoản đã quản
+                  lý</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tài khoản bị khoá</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lịch sử quản lý</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Phản ánh/Báo xấu</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tài khoản đã khoá</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Thành viên Môi
+                  giới</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Ví tiền</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Nạp tiền cho
+                  khách</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lịch sử nạp tiền</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lịch sử thanh
+                  toán</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Lịch sử thưởng giới
+                  thiệu</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Mã thanh toán</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Mã thanh toán</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Lịch sử</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="staff">
+          <div class="side-bar-extend-header">
+            <h2>Nhân viên</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Thêm nhân viên</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Cài đặt</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Thêm chức vụ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="bank">
+          <div class="side-bar-extend-header">
+            <h2>Ngân hàng</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Tài khoản ngân hàng</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="menu-extend hidden" target="ads">
+          <div class="side-bar-extend-header">
+            <h2>Quảng cáo</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Danh sách</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Thêm</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="menu-extend hidden" target="setting">
+          <div class="side-bar-extend-header">
+            <h2>Cài đặt</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Cài đặt chung</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Email</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Slider</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Thanh toán</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Giới thiệu thành
+                  viên mới</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Đánh giá</a>
+              </li>
+            </ul>
+          </div>
+          <div class="side-bar-extend-header">
+            <h2>Trang website</h2>
+          </div>
+          <div class="side-bar-extend-list">
+            <ul>
+              <li>
+                <a href=""><i class="fa-solid fa-address-card"></i> Blog</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Hướng dẫn kích hoạt
+                  tài khoản</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Liên hệ với chúng
+                  tôi</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Quy định sử dụng</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Quy chế hoạt động</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Hướng dẫn đăng
+                  tin</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Tuyển dụng</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Bảng giá tin đăng</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Quy định đăng tin</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Chính sách bảo
+                  mật</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Giải quyết khiếu
+                  nại</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Hướng dẫn giới thiệu
+                  thành viên</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Hướng dẫn chuyển
+                  tiền</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-address-card"></i> Xác thực tài
+                  khoản</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <div class="main-header">
+        <div class="flex space-bottom space-between">
+          <div class="flex">
+            <h1>Thông báo hệ thống</h1>
+            <nav class="flex">
+              <ul class="flex main-header-link">
+                <li>Trang chủ</li>
+                <li>Thông báo hệ thống</li>
+              </ul>
+            </nav>
+          </div>
+
+          <button id="btn-show-modal" class="function-button submit">
+            <i class="fa-solid fa-plus"></i> Thêm
+          </button>
+        </div>
+        <form action="" class="main-header-filter flex">
+          <div class="flex gap-5">
+            <div class="relative">
+              <input
+                type="text "
+                placeholder="ID"
+                class="main-header-filter-input"
+              />
+              <span class="psedou-icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+            <div class="relative">
+              <select
+                name=""
+                id=""
+                class="main-header-filter-input min-width-120"
+              >
+                <option value="">Tất cả</option>
+                <option value="">Có</option>
+                <option value="">Không</option>
+              </select>
+              <label>Khoá</label>
+            </div>
+            <div class="relative">
+              <input
+                type="datetime-local"
+                placeholder="Tạo từ ngày"
+                class="main-header-filter-input"
+              />
+              <span class="psedou-icon"
+                ><i class="fa-solid fa-calendar-days"></i
+              ></span>
+            </div>
+            <div class="relative">
+              <input
+                type="datetime-local"
+                placeholder="Tạo đến ngày"
+                class="main-header-filter-input"
+              />
+              <span class="psedou-icon"
+                ><i class="fa-solid fa-calendar-days"></i
+              ></span>
+            </div>
+            <button class="function-button submit hover-darker">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Tìm kiếm
+            </button>
+            <button class="function-button reset hover-darker">
+              <i class="fa-regular fa-circle-xmark"></i>
+              Xoá lọc
+            </button>
+          </div>
+          <div class="more-options">
+            <button
+              class="function-button options"
+              id="button-drop-down"
+              type="button"
+            >
+              Menu <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div
+              class="menu-drop-down hidden"
+              id="menu-drop-down"
+              style="transform: translate(-64px, 2px)"
+            >
+              <ul>
+                <li><a href="">Xuất(EXEL)</a></li>
+                <li><a href="">Cài Đặt</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="main-content white-background">
+        <div class="function-multi-select flex">
+          <span>Đã chọn: 1</span>
+          <button class="function-button reset hover-darker">
+            <i class="fa-solid fa-trash"></i> Xoá
+          </button>
+        </div>
+        <div class="flex space-between mb-20">
+          <div class="sort-by flex gap-5">
+            <div class="relative">
+              <button
+                class="function-button outline-button options"
+                id="button-sort-by"
+              >
+                <i class="fa-solid fa-layer-group"></i> Sắp xếp theo
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div class="menu-drop-down hidden" id="menu-sort-by">
+                <ul>
+                  <li value="id">ID</li>
+                  <li value="cn">Chức năng</li>
+                  <li value="nd">Nội dung</li>
+                  <li value="tt">Tình Trạng</li>
+                </ul>
+              </div>
+            </div>
+            <div class="relative">
+              <button
+                class="function-button outline-button options"
+                id="button-sort-asc"
+              >
+                Sắp xếp <i class="fa-solid fa-arrow-up"></i>
+              </button>
+              <div class="menu-drop-down hidden" id="menu-sort-asc">
+                <ul>
+                  <li>Tăng dần</li>
+                  <li>Giảm dần</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="line-choose flex align-center gap-5">
+            <span>Hiển thị 1-15 của 30 dòng </span>
+            <div class="relative">
+              <button
+                class="function-button outline-button options"
+                id="button-count-items"
+              >
+                15 <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="menu-drop-down hidden left-menu"
+                id="menu-count-items"
+              >
+                <ul>
+                  <li>15</li>
+                  <li>20</li>
+                  <li>25</li>
+                  <li>30</li>
+                  <li>35</li>
+                  <li>40</li>
+                  <li>45</li>
+                  <li>90</li>
+                  <li>120</li>
+                  <li>200</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table">
+          <table id="table-data">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" name="check-all" id="check-all" />
+                </th>
+                <th><span>STT</span></th>
+                <th><span>ID</span></th>
+                <th><span>Chức năng</span></th>
+                <th><span>Nội dung</span></th>
+                <th><span>Tình trạng</span></th>
+                <th><span>Thời gian</span></th>
+                <th><span>Thao tác</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="15">
+                  <span>Nhóm theo:</span> <strong>Miễn Phí</strong>
+                </td>
+              </tr>
+              <td
+                class="empty-title"
+                colspan="15"
+                style="background-color: #fff; padding: 20px"
+              >
+                <span>Danh sách trống!</span>
+              </td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span
+        >© Copyright 2018 - 2024 <a href=""><strong>Nhà đất bán 24h</strong></a
+        >. All Rights Reserved.</span
+      >
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("input[type=datetime-local]", {});
+    </script>
+    <script src="js/menu-drop-down.js"></script>
+    <script>
+      handleClickDropDown("button-drop-down", "menu-drop-down");
+      handleClickDropDown("button-sort-by", "menu-sort-by", true);
+      handleClickDropDown("button-sort-asc", "menu-sort-asc", true);
+      handleClickDropDown("button-count-items", "menu-count-items", true);
+      handleClickDropDown("button-notifications", "menu-notifications");
+      handleClickDropDown("button-profile", "menu-profile");
+
+      //
+      //
+    </script>
+    <script src="/js/clickMenuSelect.js"></script>
+    <script src="/js/dataSelect.js"></script>
+    <script src="/js/menuSideBarExtend.js"></script>
+    <!-- <script src="/js/data.js"></script> -->
+    <script src="/js/add-notification.js"></script>
+  </body>
+</html>

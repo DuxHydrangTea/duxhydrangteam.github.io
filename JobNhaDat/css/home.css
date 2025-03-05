@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+}
+.grid-1-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.column {
+  flex-direction: column;
+}
+.info-personal {
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.info-personal img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.personal-action-list {
+  padding: 10px;
+  grid-column: span 2;
+}
+.tabs-list {
+  gap: 15px;
+}
+.tabs-list button {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.active-tab {
+  color: var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+}
+
+.change-info-container {
+  padding: 20px;
+  margin-top: 10px;
+}
+.input-personal {
+  padding: 0.75rem 0.75rem 0.5rem;
+  outline: none;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  width: 100%;
+}
+.flex-1 {
+  flex: 1;
+}
+.form-information-personal {
+  gap: 15px;
+}
+
+.form-information-personal label {
+  position: relative;
+}
+.form-information-personal label span {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  padding: 0 3px;
+  background-color: #fff;
+}
+.button-submit-personal {
+  background-color: var(--color-main);
+  width: 80px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  margin: 0 auto;
+  color: #fff;
+}

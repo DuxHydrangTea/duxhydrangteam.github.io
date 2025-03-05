@@ -1,0 +1,10 @@
+:root {
+  font-size: 0.8rem;
+  --color-black: #212121;
+  --color-main: #145388;
+  --color-background: #f7f7f7;
+  --color-outline: #8f8f8f;
+  --color-text-gray: #757575;
+  --color-red: #dc3545;
+  --color-border: rgba(33, 33, 33, 0.15);
+}

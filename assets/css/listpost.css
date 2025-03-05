@@ -1,0 +1,34 @@
+hr {
+  margin: 5px 10px;
+}
+.poster-item {
+  border: 1px solid var(--stroke-item);
+  border-radius: var(--rounded-5);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.center-margin {
+  margin: 0 auto;
+}
+.poster-name {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.poster-item-header {
+  display: flex;
+  gap: 10px;
+}
+.poster-item-header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.poster-item-header-img {
+  max-width: 50px;
+  aspect-ratio: 1/1;
+}
+.count-comment {
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  padding: 5px 10px;
+}
