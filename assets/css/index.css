@@ -83,7 +83,7 @@ hr{
     gap: 25px;
 }
 .list-esport-main-item{
-    background-image: url('/assets/images/games/lol-bgr.png');
+    background-image: url('assets/images/games/lol-bgr.png');
     aspect-ratio: 1/1;
     background-size: cover;
     border-radius: var(--rounded-5);
@@ -117,13 +117,13 @@ hr{
     font-size: 25px;
 }
 .list-esport-main-item:nth-child(2){
-    background-image: url('/assets/images/games/dota2bgr.png');
+    background-image: url('assets/images/games/dota2bgr.png');
 }
 .list-esport-main-item:nth-child(3){
-    background-image: url('/assets/images/games/valo-bgr.png');
+    background-image: url('assets/images/games/valo-bgr.png');
 }
 .list-esport-main-item:nth-child(4){
-    background-image: url('/assets/images/games/cs2bgr.png');
+    background-image: url('assets/images/games/cs2bgr.png');
 }
 
 
