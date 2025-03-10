@@ -29,7 +29,7 @@ hr{
 }
 .slide-header{
     height: 250px;
-    background-image: url('/assets/images/zed.jpg');
+    background-image: url('assets/images/zed.jpg');
     background-size: cover;
     border-radius: var(--rounded-5);
     display: flex;
